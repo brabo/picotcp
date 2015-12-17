@@ -172,6 +172,10 @@ ifeq ($(ARCH),shared)
   CFLAGS+=-fPIC
 endif
 
+ifeq ($(ARCH),frosted)
+  CFLAGS+=-DFROSTED
+endif
+
 %.o:%.c deps
 	$(CC) -c $(CFLAGS) -o $@ $<
 

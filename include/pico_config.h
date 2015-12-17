@@ -210,6 +210,8 @@ static inline uint64_t long_long_be(uint64_t le)
 # include "arch/pico_esp8266.h"
 #elif defined MT7681
 # include "arch/pico_generic_gcc.h"
+#elif defined FROSTED
+# include "arch/pico_frosted.h"
 #elif defined FAULTY
 # include "../test/pico_faulty.h"
 #elif defined ARCHNONE
